@@ -44,5 +44,24 @@ public class AscendingQueue {
 			}
 			
 		}
+	    
+	    public int dequeue() {
+			 int response=0;
+		        if(!isEmpty()){
+		       
+		         response=data[front++];
+		        }
+		        else
+		        	System.out.println("queue is empty");
+		        return response;
+			
+		}
+		boolean isEmpty(){
+			 boolean response=false;
+		        if(front-1==rear){
+		            response=true;
+		        }
+		        return response;
+		}
 
 }
