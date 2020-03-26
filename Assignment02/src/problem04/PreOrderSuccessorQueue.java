@@ -26,4 +26,15 @@ public class PreOrderSuccessorQueue {
 	    		
 	    			return response;
 	    		}
+	public void preOrderSuccessor()                                                        //print  tree preorder successor
+	{
+		Node c = front; 
+				 
+               while(c.next!=null) {
+				System.out.print(c.next.data+" ");
+				c=c.next;
+                }
+              System.out.print("not exit");
+		
+	 }
 }
