@@ -41,7 +41,10 @@ public class BinarySearchTree {
 			traversePreOrder(node.getRight());
 		}
 	}
-	public void  printQueue() {                                                      //call preOrderSuccessor() in queue
+	public void  printQueue() {                                     //call preOrderSuccessor() in queue
+		System.out.println();
+		System.out.println("preordersuccerror to correponding element :");
 		p.preOrderSuccessor();
+		System.out.println("not exit");
 	}
 }
