@@ -34,4 +34,24 @@ public class PrePostTraversecheck {
 			
 			}
 	
+void traversePostOrder(TreeNode node) {
+	if(node!=null) {
+		
+		
+		traversePostOrder(node.getLeft());
+		
+		traversePostOrder(node.getRight());
+		System.out.print(node.getData()+" ");
+	}
+}
+void traversePreOrder(TreeNode node) {
+	if(node!=null) {
+		System.out.print(node.getData()+" ");
+		
+		traversePreOrder(node.getLeft());
+		
+		traversePreOrder(node.getRight());
+	}
+
+}	
 }
