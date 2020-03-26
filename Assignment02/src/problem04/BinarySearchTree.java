@@ -1,5 +1,4 @@
 package problem04;
-
 public class BinarySearchTree {
 	PreOrderSuccessorQueue p=new PreOrderSuccessorQueue();
 	TreeNode root;
@@ -32,4 +31,17 @@ public class BinarySearchTree {
 			}
 			
 			}
+	void traversePreOrder(TreeNode node) {                                         //traverse of tree
+		if(node!=null) {
+			
+			 p.push(node.getData());
+			System.out.print(node.getData()+" ");
+		
+			traversePreOrder(node.getLeft());
+			traversePreOrder(node.getRight());
+		}
+	}
+	public void  printQueue() {                                                      //call preOrderSuccessor() in queue
+		p.preOrderSuccessor();
+	}
 }
