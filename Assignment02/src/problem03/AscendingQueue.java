@@ -30,5 +30,19 @@ public class AscendingQueue {
 		        }
 		        return response;
 	    }
+	    
+	    public void sorting() {
+			int c;
+			for(int i=0 ; i< rear;i++){                                                      //sorting ascending
+				for(int j=0; j<=rear-i-1;j++) {
+					if(data[j+1]<data[j]) {                         
+				c=data[j+1];
+				data[j+1]=data[j];
+				data[j]=c;
+				}
+			}
+			}
+			
+		}
 
 }
