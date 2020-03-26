@@ -63,5 +63,24 @@ public class AscendingQueue {
 		        }
 		        return response;
 		}
+		public void print() {
+			sorting();
+			System.out.println("Ascending queue");
+			int k=0;
+			for(int i=rear, j=front;i>=front;i--) {
+				System.out.print("| "+"("+j+")"+"-->"+data[j]+"   |");
+				if(k==0) {
+					System.out.print("<--"+"FRONT ");
+					k++;
+					}
+			 if(j==rear) {
+					System.out.print("<--"+"REAR");
+				}
+				j++; 
+			System.out.println();
+			}
+			System.out.println("--------------");
+			
+		}
 
 }
